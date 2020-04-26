@@ -39,4 +39,16 @@ class InstanceTest {
         var bean = beanFactory.getBean<ExampleBean>("exampleBean2")
         bean.hi()
     }
+
+
+    /**
+     * Dependence Injection (通过setter方法注入)
+     */
+    @Test
+    fun `Dependence Injection setter`(): Unit {
+
+        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        var bean = beanFactory.getBean<ThingFour>("thingFour")
+        bean.hi()
+    }
 }

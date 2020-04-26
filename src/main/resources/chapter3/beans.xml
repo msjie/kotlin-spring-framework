@@ -21,4 +21,10 @@
         <constructor-arg name="thingOne" ref="beanOne"/>
     </bean>
 
+    <bean id="thingFour" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingFour">
+        <property name="thingOne" ref="beanOne"/>
+        <property name="thingTwo" ref="beanTwo"/>
+        <property name="i" value="23"/>
+    </bean>
+
 </beans>
