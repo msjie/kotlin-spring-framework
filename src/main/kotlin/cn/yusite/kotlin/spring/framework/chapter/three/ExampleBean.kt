@@ -4,9 +4,19 @@ class ExampleBean {
     private val years: Int // Number of years to calculate the Ultimate Answer
     private val ultimateAnswer: String// The Answer to Life, the Universe, and Everything
 
+    constructor(thingOne: ThingOne) {
+        years = 10
+        ultimateAnswer = "10"
+    }
+
     constructor(years: Int, str: String) {
         this.years = years
         this.ultimateAnswer = str
+    }
+
+    fun hi(): Unit {
+
+        println("years: $years;ultimateAnswer:$ultimateAnswer")
     }
 }
 
@@ -18,4 +28,7 @@ fun main(args: Array<String>) {
         "test method"
     }
     println(exampleBean.run(block))
+
+    var exampleBean1 = ExampleBean(ThingOne(ThingTwo(), ThingThree()))
+    exampleBean1.hi()
 }

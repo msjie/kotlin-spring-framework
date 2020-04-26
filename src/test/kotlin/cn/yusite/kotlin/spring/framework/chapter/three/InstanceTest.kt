@@ -11,11 +11,32 @@ class InstanceTest {
      * Dependence Injection (通过构造函数注入)
      */
     @Test
-    fun `Dependence Injection onstructor`(): Unit {
+    fun `Dependence Injection constructor`(): Unit {
 
         var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
         var bean = beanFactory.getBean<ThingOne>("beanOne")
         bean.hi()
     }
 
+    /**
+     * Dependence Injection (通过构造函数注入)
+     */
+    @Test
+    fun `Dependence Injection second constructor`(): Unit {
+
+        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        var bean = beanFactory.getBean<ExampleBean>("exampleBean")
+        bean.hi()
+    }
+
+    /**
+     * Dependence Injection (通过构造函数注入)
+     */
+    @Test
+    fun `Dependence Injection second2 constructor`(): Unit {
+
+        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        var bean = beanFactory.getBean<ExampleBean>("exampleBean2")
+        bean.hi()
+    }
 }

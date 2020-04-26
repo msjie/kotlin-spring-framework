@@ -3,15 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <beans>
-        <bean id="beanOne" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingOne">
-            <constructor-arg ref="beanThree"/>
-            <constructor-arg ref="beanTwo"/>
-        </bean>
+    <bean id="beanOne" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingOne">
+        <constructor-arg ref="beanThree"/>
+        <constructor-arg ref="beanTwo"/>
+    </bean>
 
-        <bean id="beanTwo" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingTwo"/>
+    <bean id="beanTwo" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingTwo"/>
 
-        <bean id="beanThree" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingThree"/>
-    </beans>
+    <bean id="beanThree" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingThree"/>
+
+    <bean id="exampleBean" class="cn.yusite.kotlin.spring.framework.chapter.three.ExampleBean">
+        <constructor-arg name="years" value="100"/>
+        <constructor-arg name="str" value="test"/>
+    </bean>
+
+    <bean id="exampleBean2" class="cn.yusite.kotlin.spring.framework.chapter.three.ExampleBean">
+        <constructor-arg name="thingOne" ref="beanOne"/>
+    </bean>
 
 </beans>
