@@ -21,6 +21,10 @@
     <bean id="t"
           class="cn.yusite.kotlin.spring.framework.chapter.six.T"
           c:x="${jdbc.url}"
-    />
+    >
+        <property name="basicDataSource">
+            <ref parent="basicDataSource"/>
+        </property>
+    </bean>
 
 </beans>
