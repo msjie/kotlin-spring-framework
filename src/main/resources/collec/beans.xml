@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="collectionExample"
+          class="cn.yusite.kotlin.spring.framework.chapter.collection.CollectionExample">
+        <property name="map" >
+            <map>
+                <entry key="name" value="shijie"/>
+                <entry key="age" value="31"/>
+            </map>
+        </property>
+        <property name="list">
+            <list>
+                <value>123</value>
+                <value>4321</value>
+            </list>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="name">huiyun</prop>
+                <prop key="age">27</prop>
+            </props>
+        </property>
+        <property name="set">
+            <set>
+                <value>hi</value>
+                <value>spring</value>
+            </set>
+        </property>
+    </bean>
+
+
+</beans>
