@@ -34,5 +34,15 @@
         </property>
     </bean>
 
+    <bean id="child"
+          parent="collectionExample">
+        <property name="set">
+            <set>
+                <value>mao</value>
+                <value>mao</value>
+            </set>
+        </property>
+    </bean>
+
 
 </beans>

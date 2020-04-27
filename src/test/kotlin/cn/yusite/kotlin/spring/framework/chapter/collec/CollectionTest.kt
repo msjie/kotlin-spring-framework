@@ -16,5 +16,8 @@ class CollectionTest {
         val context = ClassPathXmlApplicationContext("collec/beans.xml")
         val bean = context.getBean<CollectionExample>("collectionExample")
         bean.hi();
+        println("===".repeat(10))
+        val child = context.getBean<CollectionExample>("child")
+        child.hi();
     }
 }
