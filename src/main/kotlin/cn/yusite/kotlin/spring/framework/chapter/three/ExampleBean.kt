@@ -18,6 +18,15 @@ class ExampleBean {
 
         println("years: $years;ultimateAnswer:$ultimateAnswer")
     }
+
+    companion object {
+
+        @JvmStatic
+        fun createInstance(years: Int, str: String): ExampleBean {
+
+            return ExampleBean(years,str)
+        }
+    }
 }
 
 fun main(args: Array<String>) {

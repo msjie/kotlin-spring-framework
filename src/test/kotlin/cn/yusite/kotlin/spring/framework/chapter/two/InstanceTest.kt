@@ -38,5 +38,6 @@ class InstanceTest {
         var beanFactory = ClassPathXmlApplicationContext("chapter2/beans.xml")
         var exampleAnotherBean = beanFactory.getBean<ExampleAnotherBean>("exampleAnotherBean")
         println(exampleAnotherBean)
+        exampleAnotherBean.hi()
     }
 }

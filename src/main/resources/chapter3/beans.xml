@@ -12,6 +12,7 @@
 
     <bean id="beanThree" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingThree"/>
 
+<!--    constructor-base dependence injection-->
     <bean id="exampleBean" class="cn.yusite.kotlin.spring.framework.chapter.three.ExampleBean">
         <constructor-arg name="years" value="100"/>
         <constructor-arg name="str" value="test"/>
@@ -21,10 +22,17 @@
         <constructor-arg name="thingOne" ref="beanOne"/>
     </bean>
 
+<!--    setter-base Dependence Injection-->
     <bean id="thingFour" class="cn.yusite.kotlin.spring.framework.chapter.three.ThingFour">
         <property name="thingOne" ref="beanOne"/>
         <property name="thingTwo" ref="beanTwo"/>
         <property name="i" value="23"/>
+    </bean>
+
+    <bean id="exampleBean3" class="cn.yusite.kotlin.spring.framework.chapter.three.ExampleBean"
+          factory-method="createInstance">
+        <constructor-arg name="years" value="50"/>
+        <constructor-arg name="str" value="factory static method"/>
     </bean>
 
 </beans>

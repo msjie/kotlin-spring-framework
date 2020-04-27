@@ -6,6 +6,7 @@ class StaticFactory private constructor(){
 
         var staticFactory = StaticFactory()
 
+        @JvmStatic
         fun createInstance(): StaticFactory = staticFactory
     }
 }

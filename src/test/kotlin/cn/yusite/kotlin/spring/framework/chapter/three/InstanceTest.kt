@@ -51,4 +51,15 @@ class InstanceTest {
         var bean = beanFactory.getBean<ThingFour>("thingFour")
         bean.hi()
     }
+
+    /**
+     * Dependence Injection (通过静态工厂方法注入)
+     */
+    @Test
+    fun `Dependence Injection static factory`(): Unit {
+
+        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        var bean = beanFactory.getBean<ExampleBean>("exampleBean3")
+        bean.hi()
+    }
 }
