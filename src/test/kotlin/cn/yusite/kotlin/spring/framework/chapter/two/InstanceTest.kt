@@ -11,10 +11,10 @@ class InstanceTest {
      * 使用构造函数初始化
      */
     @Test
-    fun `primary constructor install`(): Unit {
+    fun `primary constructor install`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter2/beans.xml")
-        var bean = beanFactory.getBean<ExampleBean>("exampleBean")
+        val beanFactory = ClassPathXmlApplicationContext("chapter2/beans.xml")
+        val bean = beanFactory.getBean<ExampleBean>("exampleBean")
         println(bean)
     }
 
@@ -22,10 +22,10 @@ class InstanceTest {
      * 使用静态工厂初始化
      */
     @Test
-    fun `primary static factory install`(): Unit {
+    fun `primary static factory install`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter2/beans.xml")
-        var bean = beanFactory.getBean<StaticFactory>("staticFactory")
+        val beanFactory = ClassPathXmlApplicationContext("chapter2/beans.xml")
+        val bean = beanFactory.getBean<StaticFactory>("staticFactory")
         println(bean)
     }
 
@@ -33,10 +33,10 @@ class InstanceTest {
      * 使用实例工厂方法初始化
      */
     @Test
-    fun `primary instance factory install`(): Unit {
+    fun `primary instance factory install`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter2/beans.xml")
-        var exampleAnotherBean = beanFactory.getBean<ExampleAnotherBean>("exampleAnotherBean")
+        val beanFactory = ClassPathXmlApplicationContext("chapter2/beans.xml")
+        val exampleAnotherBean = beanFactory.getBean<ExampleAnotherBean>("exampleAnotherBean")
         println(exampleAnotherBean)
         exampleAnotherBean.hi()
     }

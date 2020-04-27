@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    https://www.baeldung.com/circular-dependencies-in-spring-->
+<!--    1：使用set注入-->
+<!--    2：增加@Lazy注解，xml无法实现？-->
+<!--    循环依赖问题-->
+
+<!--   循环依赖问题 xml bean初始化顺序，是bean声明的顺序？？？-->
+
+
+
+    <bean id="x" class="cn.yusite.kotlin.spring.framework.chapter.four.X" depends-on="y">
+        <constructor-arg name="y" ref="y"/>
+    </bean>
+
+    <bean id="y" class="cn.yusite.kotlin.spring.framework.chapter.four.Y"/>
+
+</beans>

@@ -11,10 +11,10 @@ class InstanceTest {
      * Dependence Injection (通过构造函数注入)
      */
     @Test
-    fun `Dependence Injection constructor`(): Unit {
+    fun `Dependence Injection constructor`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
-        var bean = beanFactory.getBean<ThingOne>("beanOne")
+        val beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        val bean = beanFactory.getBean<ThingOne>("beanOne")
         bean.hi()
     }
 
@@ -22,10 +22,10 @@ class InstanceTest {
      * Dependence Injection (通过构造函数注入)
      */
     @Test
-    fun `Dependence Injection second constructor`(): Unit {
+    fun `Dependence Injection second constructor`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
-        var bean = beanFactory.getBean<ExampleBean>("exampleBean")
+        val beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        val bean = beanFactory.getBean<ExampleBean>("exampleBean")
         bean.hi()
     }
 
@@ -33,10 +33,10 @@ class InstanceTest {
      * Dependence Injection (通过构造函数注入)
      */
     @Test
-    fun `Dependence Injection second2 constructor`(): Unit {
+    fun `Dependence Injection second2 constructor`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
-        var bean = beanFactory.getBean<ExampleBean>("exampleBean2")
+        val beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        val bean = beanFactory.getBean<ExampleBean>("exampleBean2")
         bean.hi()
     }
 
@@ -45,10 +45,10 @@ class InstanceTest {
      * Dependence Injection (通过setter方法注入)
      */
     @Test
-    fun `Dependence Injection setter`(): Unit {
+    fun `Dependence Injection setter`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
-        var bean = beanFactory.getBean<ThingFour>("thingFour")
+        val beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        val bean = beanFactory.getBean<ThingFour>("thingFour")
         bean.hi()
     }
 
@@ -56,10 +56,10 @@ class InstanceTest {
      * Dependence Injection (通过静态工厂方法注入)
      */
     @Test
-    fun `Dependence Injection static factory`(): Unit {
+    fun `Dependence Injection static factory`() {
 
-        var beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
-        var bean = beanFactory.getBean<ExampleBean>("exampleBean3")
+        val beanFactory = ClassPathXmlApplicationContext("chapter3/beans.xml")
+        val bean = beanFactory.getBean<ExampleBean>("exampleBean3")
         bean.hi()
     }
 }
