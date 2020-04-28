@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--自动装配四种类型：no,byName,byType,constructor-->
+    <bean name="x" class="cn.yusite.kotlin.spring.framework.chapter.aotuwired.X" />
+    <bean name="z" class="cn.yusite.kotlin.spring.framework.chapter.aotuwired.Z" />
+    <bean name="z1" class="cn.yusite.kotlin.spring.framework.chapter.aotuwired.Z" />
+
+    <bean name="y" class="cn.yusite.kotlin.spring.framework.chapter.aotuwired.Y" autowire="byName"/>
+
+<!--    NoUniqueBeanDefinitionException-->
+<!--    <bean name="y" class="cn.yusite.kotlin.spring.framework.chapter.aotuwired.Y" autowire="byType"/>-->
+</beans>
