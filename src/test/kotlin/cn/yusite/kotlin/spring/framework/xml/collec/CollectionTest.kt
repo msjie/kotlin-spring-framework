@@ -1,9 +1,9 @@
 package cn.yusite.kotlin.spring.framework.xml.collec
 
 import cn.yusite.kotlin.spring.framework.xml.collection.CollectionExample
+import org.junit.Test
 import org.springframework.beans.factory.getBean
 import org.springframework.context.support.ClassPathXmlApplicationContext
-import kotlin.test.Test
 
 class CollectionTest {
 
