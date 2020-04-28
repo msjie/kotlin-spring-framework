@@ -19,7 +19,7 @@
     </bean>
 
     <bean id="t"
-          class="cn.yusite.kotlin.spring.framework.chapter.six.T"
+          class="cn.yusite.kotlin.spring.framework.xml.six.T"
           c:x="${jdbc.url}"
     >
         <property name="basicDataSource">

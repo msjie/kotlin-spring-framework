@@ -5,11 +5,11 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="accountDao"
-          class="cn.yusite.kotlin.spring.framework.chapter.one.dao.JpaAccountDao">
+          class="cn.yusite.kotlin.spring.framework.xml.one.dao.JpaAccountDao">
         <!-- additional collaborators and configuration for this bean go here -->
     </bean>
 
-    <bean id="itemDao" class="cn.yusite.kotlin.spring.framework.chapter.one.dao.JpaItemDao">
+    <bean id="itemDao" class="cn.yusite.kotlin.spring.framework.xml.one.dao.JpaItemDao">
         <!-- additional collaborators and configuration for this bean go here -->
     </bean>
 

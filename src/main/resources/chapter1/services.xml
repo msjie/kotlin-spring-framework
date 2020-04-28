@@ -6,7 +6,7 @@
 
     <!-- services -->
 
-    <bean id="petStore" class="cn.yusite.kotlin.spring.framework.chapter.one.service.PetStoreServiceImpl">
+    <bean id="petStore" class="cn.yusite.kotlin.spring.framework.xml.one.service.PetStoreServiceImpl">
         <property name="accountDao" ref="accountDao"/>
         <property name="itemDao" ref="itemDao"/>
         <!-- additional collaborators and configuration for this bean go here -->

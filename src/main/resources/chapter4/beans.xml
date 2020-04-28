@@ -12,10 +12,10 @@
 
 
 
-    <bean id="x" class="cn.yusite.kotlin.spring.framework.chapter.four.X" depends-on="y">
+    <bean id="x" class="cn.yusite.kotlin.spring.framework.xml.four.X" depends-on="y">
         <constructor-arg name="y" ref="y"/>
     </bean>
 
-    <bean id="y" class="cn.yusite.kotlin.spring.framework.chapter.four.Y"/>
+    <bean id="y" class="cn.yusite.kotlin.spring.framework.xml.four.Y"/>
 
 </beans>

@@ -7,10 +7,10 @@
 
 
     <bean id="outer"
-          class="cn.yusite.kotlin.spring.framework.chapter.inner.Outer">
+          class="cn.yusite.kotlin.spring.framework.xml.inner.Outer">
         <constructor-arg name="outerName" value="外部类名称"/>
         <property name="target">
-            <bean class="cn.yusite.kotlin.spring.framework.chapter.inner.Inner">
+            <bean class="cn.yusite.kotlin.spring.framework.xml.inner.Inner">
                 <constructor-arg name="innerName" value="内部类名称"/> <!-- this is the inner bean -->
             </bean>
         </property>

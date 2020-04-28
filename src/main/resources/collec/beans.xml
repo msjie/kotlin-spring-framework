@@ -7,7 +7,7 @@
 
 
     <bean id="collectionExample"
-          class="cn.yusite.kotlin.spring.framework.chapter.collection.CollectionExample">
+          class="cn.yusite.kotlin.spring.framework.xml.collection.CollectionExample">
         <property name="map" >
             <map>
                 <entry key="name" value="shijie"/>

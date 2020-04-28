@@ -6,11 +6,11 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/aop
         https://www.springframework.org/schema/aop/spring-aop.xsd">
-    <bean class="cn.yusite.kotlin.spring.framework.chapter.scope.SingletonBean"/>
-    <bean class="cn.yusite.kotlin.spring.framework.chapter.scope.PrototypeBean" scope="prototype"/>
-    <bean class="cn.yusite.kotlin.spring.framework.chapter.scope.RequestBean" scope="request"/>
-    <bean class="cn.yusite.kotlin.spring.framework.chapter.scope.SessionBean" scope="session"/>
+    <bean class="cn.yusite.kotlin.spring.framework.xml.scope.SingletonBean"/>
+    <bean class="cn.yusite.kotlin.spring.framework.xml.scope.PrototypeBean" scope="prototype"/>
+    <bean class="cn.yusite.kotlin.spring.framework.xml.scope.RequestBean" scope="request"/>
+    <bean class="cn.yusite.kotlin.spring.framework.xml.scope.SessionBean" scope="session"/>
 <!--该作用域作用于ServletContext级别上-->
-<!--    <bean class="cn.yusite.kotlin.spring.framework.chapter.scope.ApplicationBean" scope=""/>-->
-<!--    <bean class="cn.yusite.kotlin.spring.framework.chapter.scope.WebSocketBean"/>-->
+<!--    <bean class="cn.yusite.kotlin.spring.framework.xml.scope.ApplicationBean" scope=""/>-->
+<!--    <bean class="cn.yusite.kotlin.spring.framework.xml.scope.WebSocketBean"/>-->
 </beans>

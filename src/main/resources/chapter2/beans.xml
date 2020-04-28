@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--    无参构造-->
-    <bean name="exampleBean" class="cn.yusite.kotlin.spring.framework.chapter.two.ExampleBean"/>
+    <bean name="exampleBean" class="cn.yusite.kotlin.spring.framework.xml.two.ExampleBean"/>
 
 <!--    静态工厂方法-->
-    <bean name="staticFactory" class="cn.yusite.kotlin.spring.framework.chapter.two.StaticFactory" factory-method="createInstance"/>
+    <bean name="staticFactory" class="cn.yusite.kotlin.spring.framework.xml.two.StaticFactory" factory-method="createInstance"/>
 
 <!--    实例工厂方法-->
     <bean name="exampleAnotherBean" factory-bean="exampleBean" factory-method="createExampleAnotherBean">

@@ -6,6 +6,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
        default-lazy-init="true">
     <!--lazy-->
-    <bean id="lazy" class="cn.yusite.kotlin.spring.framework.chapter.lazy.LazyBean"/>
-    <bean name="not.lazy" class="cn.yusite.kotlin.spring.framework.chapter.lazy.LazyBean" lazy-init="false"/>
+    <bean id="lazy" class="cn.yusite.kotlin.spring.framework.xml.lazy.LazyBean"/>
+    <bean name="not.lazy" class="cn.yusite.kotlin.spring.framework.xml.lazy.LazyBean" lazy-init="false"/>
 </beans>
