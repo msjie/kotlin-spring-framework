@@ -41,6 +41,9 @@ dependencies {
     implementation("org.apache.commons:commons-dbcp2:2.7.0")
     implementation("mysql:mysql-connector-java:8.0.19")
 
+    //bean scope
+    implementation("org.springframework:spring-webmvc:5.2.5.RELEASE")
+
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
