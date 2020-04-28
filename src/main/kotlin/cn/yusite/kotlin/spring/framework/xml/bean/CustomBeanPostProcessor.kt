@@ -2,6 +2,9 @@ package cn.yusite.kotlin.spring.framework.xml.bean
 
 import org.springframework.beans.factory.config.BeanPostProcessor
 
+/**
+ * 参考实现RequiredAnnotationBeanPostProcessor
+ */
 class CustomBeanPostProcessor : BeanPostProcessor {
 
     /**
