@@ -26,4 +26,27 @@ class MethodTest {
             println(it)
         }
     }
+
+
+    /**
+     * 1，使用方法注入，与spring框架进行解耦
+     */
+    @Test
+    fun `lookup method injection`() {
+
+        val context = ClassPathXmlApplicationContext("method/beans.xml")
+        context.beanFactory.beanNamesIterator.forEach {
+            println(it)
+        }
+        val bean = context.getBean<cn.yusite.kotlin.spring.framework.chapter.method.lookup.CommandManager>("lookManager")
+//        val bean = context.getBean("lookManager", cn.yusite.kotlin.spring.framework.chapter.method.lookup.CommandManager::class.java)
+        val mapOf = mapOf("one" to "1")
+        bean.process(mapOf)
+        bean.process(mapOf)
+        bean.process(mapOf)
+        println("====".repeat(10))
+        context.beanFactory.beanNamesIterator.forEach {
+            println(it)
+        }
+    }
 }

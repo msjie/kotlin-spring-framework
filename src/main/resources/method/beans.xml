@@ -3,6 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--lazy-->
-    <bean id="command" class="cn.yusite.kotlin.spring.framework.chapter.method.Command" scope="prototype"/>
+    <bean name="command" class="cn.yusite.kotlin.spring.framework.chapter.method.Command" scope="prototype"/>
+    <bean name="lookManager" class="cn.yusite.kotlin.spring.framework.chapter.method.lookup.CommandManager" scope="singleton">
+        <lookup-method name="createCommand" bean="command"/>
+    </bean>
     <bean name="commandManager" class="cn.yusite.kotlin.spring.framework.chapter.method.CommandManager" scope="singleton"/>
 </beans>
