@@ -5,13 +5,13 @@ import org.springframework.beans.factory.getBean
 import org.springframework.context.support.ClassPathXmlApplicationContext
 import kotlin.test.Test
 
-class LazyTest {
+class AutowiredTest {
 
     /**
      * 1，自动装配
      */
     @Test
-    fun `lazy bean test`() {
+    fun `autowired test`() {
 
         val context = ClassPathXmlApplicationContext("autowired/beans.xml")
         context.beanFactory.beanNamesIterator.forEach {

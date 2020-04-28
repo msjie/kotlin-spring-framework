@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--lazy-->
+    <bean id="command" class="cn.yusite.kotlin.spring.framework.chapter.method.Command" scope="prototype"/>
+    <bean name="commandManager" class="cn.yusite.kotlin.spring.framework.chapter.method.CommandManager" scope="singleton"/>
+</beans>
