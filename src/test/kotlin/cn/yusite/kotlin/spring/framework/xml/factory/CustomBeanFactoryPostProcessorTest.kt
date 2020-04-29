@@ -1,6 +1,5 @@
 package cn.yusite.kotlin.spring.framework.xml.factory
 
-import org.junit.Assert.*
 import org.junit.Test
 import org.springframework.context.support.ClassPathXmlApplicationContext
 

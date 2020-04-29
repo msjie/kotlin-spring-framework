@@ -4,6 +4,8 @@ import org.springframework.beans.factory.config.BeanFactoryPostProcessor
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory
 
 /**
+ * 参看实现：PropertySourcesPlaceholderConfigurer
+ *
  * Customizing Configuration Metadata
  */
 class CustomBeanFactoryPostProcessor : BeanFactoryPostProcessor {
