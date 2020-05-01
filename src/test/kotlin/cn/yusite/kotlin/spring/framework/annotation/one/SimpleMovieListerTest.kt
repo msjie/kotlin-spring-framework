@@ -27,5 +27,7 @@ class SimpleMovieListerTest {
         for ((k,v) in bean.movieFinderMap) {
             println("$k : $v")
         }
+        println("===".repeat(10))
+        println(bean.context.getBean<SimpleMovieLister>(MovieFinder::class.java) == bean)
     }
 }
