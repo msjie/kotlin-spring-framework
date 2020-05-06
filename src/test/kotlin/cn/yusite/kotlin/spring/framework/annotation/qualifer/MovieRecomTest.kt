@@ -1,8 +1,6 @@
 package cn.yusite.kotlin.spring.framework.annotation.qualifer
 
 import cn.yusite.kotlin.spring.framework.annotation.primary.MovieConfiguration
-import cn.yusite.kotlin.spring.framework.annotation.primary.MovieRecommender
-import org.junit.Assert.*
 import org.junit.Test
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
 

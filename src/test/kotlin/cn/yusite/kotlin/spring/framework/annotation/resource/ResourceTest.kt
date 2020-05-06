@@ -1,6 +1,5 @@
-package cn.yusite.kotlin.spring.framework.annotation.one
+package cn.yusite.kotlin.spring.framework.annotation.resource
 
-import cn.yusite.kotlin.spring.framework.annotation.resource.R
 import org.junit.Test
 import org.springframework.beans.factory.getBean
 import org.springframework.context.support.ClassPathXmlApplicationContext
