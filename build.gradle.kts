@@ -44,6 +44,8 @@ dependencies {
     //bean scope
     implementation("org.springframework:spring-webmvc:5.2.5.RELEASE")
 
+    annotationProcessor("org.springframework:spring-context-indexer:5.2.5.RELEASE")
+
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
