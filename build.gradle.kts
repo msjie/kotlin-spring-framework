@@ -38,6 +38,9 @@ dependencies {
     implementation("org.springframework:spring-core:5.2.5.RELEASE")
     implementation("org.springframework:spring-context:5.2.5.RELEASE")
 
+    implementation("org.aspectj:aspectjrt:1.9.5")
+    implementation("org.aspectj:aspectjweaver:1.9.5")
+
     implementation("org.apache.commons:commons-dbcp2:2.7.0")
     implementation("mysql:mysql-connector-java:8.0.19")
 
