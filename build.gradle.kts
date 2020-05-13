@@ -14,7 +14,7 @@ plugins {
     kotlin("plugin.spring") version "1.3.71"
 }
 val springVersion = "5.2.5.RELEASE"
-extra["spring-version"]="5.2.5.RELEASE"
+extra["spring-version"] = "5.2.5.RELEASE"
 
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
@@ -45,6 +45,15 @@ dependencies {
     implementation("org.springframework:spring-webmvc:5.2.5.RELEASE")
 
     annotationProcessor("org.springframework:spring-context-indexer:5.2.5.RELEASE")
+
+    compileOnly("org.projectlombok:lombok:1.18.12")
+    annotationProcessor("org.projectlombok:lombok:1.18.12")
+
+    testCompileOnly("org.projectlombok:lombok:1.18.12")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.12")
+
+    implementation("org.apache.logging.log4j:log4j-api:2.13.2")
+    implementation("org.apache.logging.log4j:log4j-core:2.13.2")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
